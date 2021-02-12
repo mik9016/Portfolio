@@ -1,0 +1,78 @@
+@import "./variables.scss";
+@import "./responsive.scss";
+
+.navigation {
+  padding: 1.5rem;
+  text-align: center;
+  #navbarNavAltMarkup {
+    display: flex;
+    justify-content: center;
+  }
+  li {
+    padding: 1rem;
+    font-size: 1.5rem;
+    &:hover {
+      cursor: pointer;
+      color: $main-color;
+    }
+  }
+}
+
+#home {
+  display: flex;
+  justify-content: center;
+  .introduction {
+    img {
+      height: 80vh;
+    }
+
+    h1 {
+      font-family: $caption-font;
+      font-weight: bold;
+    }
+  }
+}
+
+#about {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: $caption-font;
+  height: 80vh;
+
+  .color-width {
+    background-color: $main-color;
+    width: 80vw;
+    height: 10vh;
+    margin: 0 auto;
+  }
+  .container {
+    margin-top: 2rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    .card-title {
+      font-weight: bold;
+    }
+
+    .color {
+      background-color: $main-color;
+      width: 0.15vw;
+      justify-content: start;
+    }
+    .card {
+      margin-top: 7rem;
+      width: 40vw;
+      margin: 1rem;
+      border: none;
+    }
+  }
+}
+
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.autoprefixer {
+  user-select: none;
+}
