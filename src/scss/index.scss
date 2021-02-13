@@ -1,7 +1,9 @@
+
 @import "./variables.scss";
 @import "./responsive.scss";
 @import "./mixins.scss";
 @import "./animations.scss";
+
 
 .navigation {
   padding: 1.5rem;
@@ -38,7 +40,7 @@
   margin-top: 2rem;
   text-align: center;
   font-family: $caption-font;
-  height: 80vh;
+  height: 60vh;
 
   .color-width {
     background-color: $main-color;
@@ -91,8 +93,7 @@
       margin-bottom: 6rem;
       cursor: pointer;
       &:hover {
-        animation: tech-up 1s;
-       
+        animation: tech-up 2s;
       }
     }
   }
@@ -101,6 +102,48 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  .card-title {
+    font-family: $caption-font;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+}
+
+#contact {
+  margin: 4rem;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .title-container {
+    text-align: center;
+    .title {
+      font-family: $caption-font;
+      height: 2rem;
+
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .card {
+    margin-top: 2rem;
+  }
+  .form {
+    width: 40vw;
+    margin: 0;
+    .btn-container {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 .autoprefixer {
   user-select: none;

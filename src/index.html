@@ -9,6 +9,7 @@
       rel="stylesheet"
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
+      
     />
   </head>
   <body>
@@ -86,8 +87,11 @@
           <div class="col">
             <img class="picture" src="./assets/logo-javascript.svg" alt="js" />
             <img class="picture" src="./assets/nodejs.svg" alt="node" />
-            <img class="picture" src="./assets/bootstrap-5.svg" alt="bootstrap" />
-
+            <img
+              class="picture"
+              src="./assets/bootstrap-5.svg"
+              alt="bootstrap"
+            />
           </div>
           <div class="col">
             <img class="picture" src="./assets/react-2.svg" alt="react" />
@@ -107,6 +111,7 @@
     <!-- Start Project Site -->
     <div id="projects">
       <div class="container-md">
+        <h2 class="card-title">My projects:</h2>
         <div class="row">
           <div class="card m-4" style="width: 18rem">
             <img class="card-img-top" src="./assets/couch.jpg" alt="Pic" />
@@ -159,15 +164,47 @@
       </div>
     </div>
     <!-- End Project Site -->
-     <!-- Start Contact -->
-     <div id="contact" href="#contact">
-         <div class="container">    
-            <form>
+    <!-- Start Contact -->
+    <div id="contact" href="#contact">
+      <div class="container">
+        <div class="title-container">
+          <h2 class="title">Send me a message</h2>
+        </div>
 
-            </form>
-         </div>
-     </div>
-      <!-- End Contact -->
+        <form class="form">
+          <div class="card">
+            <div class="card-body">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name-input"
+                  placeholder="name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email-input"
+                  placeholder="example@mail.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4"></textarea>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-primary">Send</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Contact -->
   </body>
   <script
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
