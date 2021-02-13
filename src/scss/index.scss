@@ -1,5 +1,7 @@
 @import "./variables.scss";
 @import "./responsive.scss";
+@import "./mixins.scss";
+@import "./animations.scss";
 
 .navigation {
   padding: 1.5rem;
@@ -28,7 +30,6 @@
 
     h1 {
       font-family: $caption-font;
-      font-weight: bold;
     }
   }
 }
@@ -55,19 +56,47 @@
     }
 
     .color {
-      background-color: $main-color;
-      width: 0.15vw;
-      justify-content: start;
+      @include left-stripe;
     }
     .card {
-      margin-top: 7rem;
+      margin-top: 4rem;
       width: 40vw;
       margin: 1rem;
       border: none;
     }
   }
 }
+//Tec
+#technologies {
+  font-family: $caption-font;
+  .card-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .color-tech {
+    background-color: $main-color;
+    width: 1px;
+    justify-content: start;
+    margin-bottom: 4rem;
+  }
 
+  .col {
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    .picture {
+      width: 8rem;
+      height: 8rem;
+      margin-bottom: 6rem;
+      cursor: pointer;
+      &:hover {
+        animation: tech-up 1s;
+       
+      }
+    }
+  }
+}
 #projects {
   display: flex;
   justify-content: center;
