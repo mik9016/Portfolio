@@ -12,6 +12,9 @@
 }
 
 #navigation {
+  #logo-navbar{
+  height: 6rem;
+  }
   padding: 1.5rem;
   display: flex;
   justify-content: center;
@@ -24,6 +27,7 @@
   .navbar-nav {
     text-align: center;
     a {
+      font-family: $caption-font;
       text-decoration: none;
       color: black;
       padding: 1rem;
@@ -154,6 +158,30 @@
     .btn-container {
       display: flex;
       justify-content: center;
+    }
+  }
+}
+
+#footer{
+ 
+  width: 100%;
+  height: 12rem;
+  background-color: $main-color;
+  footer{
+    
+    text-align: center;
+    margin-top: 2rem;
+
+    img{
+      margin-top: 2rem;
+      height: 2rem;
+    }
+    p{
+      margin-top: 2rem;
+
+    }
+    #mylogo{
+      margin: 0;
     }
   }
 }
