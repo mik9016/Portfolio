@@ -1,3 +1,61 @@
-@media screen and (max-width: 600px) {
-    
+//mobile
+@media screen and (max-width: 576px) {
+  #home {
+    .introduction {
+      margin: 1rem;
+      img {
+        object-fit: scale-down;
+        max-width: 100%;
+      }
+    }
   }
+
+  #about {
+    .card-body {
+      margin: 0;
+      width: 80vw;
+    }
+  }
+
+  #technologies {
+    .color-tech {
+      display: none;
+    }
+    img {
+      margin-left: 20%;
+    }
+  }
+
+  #contact {
+    margin: 1rem;
+    justify-content: center;
+  }
+  .form {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+//i-pad
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+  #home {
+    .introduction {
+      img {
+        object-fit: scale-down;
+        max-width: 100%;
+      }
+    }
+  }
+
+  #about {
+    .h4 {
+      max-width: 100%;
+    }
+  }
+
+  #technologies {
+    .color-tech {
+      display: none;
+    }
+  }
+}

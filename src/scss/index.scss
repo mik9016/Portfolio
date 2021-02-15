@@ -11,22 +11,27 @@
   }
 }
 
-.navigation {
+#navigation {
   padding: 1.5rem;
-  text-align: center;
-  #navbarNavAltMarkup {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  .collapse {
     justify-content: center;
-  
   }
-  a {
-    text-decoration: none;
-    color: black;
-    padding: 1rem;
+  .navbar-brand {
     font-size: 1.5rem;
-    &:hover {
-      cursor: pointer;
-      color: $main-color;
+  }
+  .navbar-nav {
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 1rem;
+      font-size: 1.5rem;
+      &:hover {
+        cursor: pointer;
+        color: $main-color;
+      }
     }
   }
 }
@@ -38,7 +43,7 @@
     img {
       height: 80vh;
     }
-
+    text-align: center;
     h1 {
       font-family: $caption-font;
     }
@@ -49,7 +54,7 @@
   margin-top: 2rem;
   text-align: center;
   font-family: $caption-font;
-  height: 60vh;
+  height: 55vh;
 
   .color-width {
     background-color: $main-color;
@@ -59,7 +64,7 @@
   }
   .container {
     margin-top: 2rem;
-    width: 100vw;
+    width: 50vw;
     display: flex;
     justify-content: center;
     .card-title {
@@ -67,18 +72,16 @@
     }
 
     .color {
-      @include left-stripe;
-    }
-    .card {
-      margin-top: 4rem;
-      width: 40vw;
-      margin: 1rem;
-      border: none;
+      background-color: $main-color;
+      width: 0.15vw;
+      justify-content: start;
+      margin-bottom: 4rem;
     }
   }
 }
 //Tec
 #technologies {
+  margin-top: 1rem;
   font-family: $caption-font;
   .card-title {
     text-align: center;
@@ -146,7 +149,7 @@
     margin-top: 2rem;
   }
   .form {
-    width: 40vw;
+    width: 55vw;
     margin: 0;
     .btn-container {
       display: flex;

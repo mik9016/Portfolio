@@ -12,216 +12,236 @@
     />
   </head>
   <body>
-    <!-- Start Navbar -->
-   
-    <div class="navigation" >
-      <nav class="navbar navbar-expand-md fixed-top">
-        <a class="navbar-brand" href="#">
-          <i class="cil-laptop"></i>
-        </a>
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#home"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul class="navbar-nav ml-auto">
-              <li>
-                <a href="#home" class="nav-item">Home</a>
-              </li>
-              <li>
-                <a class="nav-item" href="#about">About</a>
-              </li>
-              <li>
-                <a class="nav-item" href="#projects">Projects</a>
-              </li>
-              <li>
-                <a class="nav-item" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </div>
-    <!-- End Navbar -->
+    <div class="container">
+      <!-- Start Navbar -->
+      <div id="navigation" class="col">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-white fixed-top mx-auto"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">M.G</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav" id="nav-item-list">
+                <li>
+                  <a href="#home" class="nav-link">Home</a>
+                </li>
 
-    <!--Start Introduction  -->
-    <div id="home" class="container-xs">
-      <div class="introduction">
-        <img src="./assets/illustration/4498903.jpg" alt="DevPic" />
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
 
-        <caption>
-          <h1>Hi, i'm Mikolaj. I build things for web and i love it!</h1>
-        </caption>
-      </div>
-    </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
 
-    <!-- End Introduction -->
-    <!-- Start About -->
-    <div href="#about" id="about">
-      <div class="color-width"></div>
-      <div class="container">
-        <div class="color"></div>
-        <div class="card">
-          <h2 class="card-title">About me:</h2>
-          <div class="card-body">
-            <h4>
-              Hi, i'm composer and musician who through maiking music for video
-              games felt in love with programming. Currently I'm in postgraduate
-              studies at the WSB University in the field of Front-End Developer
-              with Angular.
-            </h4>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End About -->
-    <!-- Start Technologies -->
-    <div id="technologies" href="#tech">
-      <h2 class="card-title">Technologies i'm familiar with:</h2>
-      <div class="container">
-        <div class="row">
-          <div class="color-tech"></div>
-          <div class="col">
-            <img class="picture" src="./assets/html5.svg" alt="html" />
-            <img class="picture" src="./assets/css3.svg" alt="css" />
-            <img class="picture" src="./assets/git.svg" alt="git" />
-          </div>
-          <div class="col">
-            <img class="picture" src="./assets/logo-javascript.svg" alt="js" />
-            <img class="picture" src="./assets/nodejs.svg" alt="node" />
-            <img
-              class="picture"
-              src="./assets/bootstrap-5.svg"
-              alt="bootstrap"
-            />
-          </div>
-          <div class="col">
-            <img class="picture" src="./assets/react-2.svg" alt="react" />
-            <img class="picture" src="./assets/jquery.svg" alt="jquery" />
-            <img class="picture" src="./assets/adobe-xd-1.svg" alt="adobe-xd" />
-          </div>
-          <div class="col">
-            <img class="picture" src="./assets/mongodb.svg" alt="mongodb" />
-            <img class="picture" src="./assets/sass-1.svg" alt="sass" />
-          </div>
-        </div>
-        <div class="row"></div>
-      </div>
-    </div>
-    <!--  End Technologies -->
-
-    <!-- Start Project Site -->
-    <div id="projects">
-      <div class="container-md">
-        <h2 class="card-title">My projects:</h2>
-        <div class="row">
-          <div class="card m-4" style="width: 18rem">
-            <img class="card-img-top" src="./assets/couch.jpg" alt="Pic" />
-            <div class="card-body">
-              <h5 class="card-title">Project 1</h5>
-              <p class="card-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro
-                inventore laboriosam ipsum nam aliquid dolore nesciunt enim ea
-                fugiat, earum veniam minima architecto, reiciendis quis,
-                possimus dicta esse voluptatum. Officiis!
-              </p>
-              <div class="text-center">
-                <a class="btn btn-primary" href=""> Got to Project</a>
-              </div>
+                <li>
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
             </div>
           </div>
+        </nav>
+      </div>
+      <!-- End Navbar -->
 
-          <div class="card m-4" style="width: 18rem">
-            <img class="card-img-top" src="./assets/couch.jpg" alt="Pic" />
-            <div class="card-body">
-              <h5 class="card-title">Project 1</h5>
-              <p class="card-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro
-                inventore laboriosam ipsum nam aliquid dolore nesciunt enim ea
-                fugiat, earum veniam minima architecto, reiciendis quis,
-                possimus dicta esse voluptatum. Officiis!
-              </p>
-              <div class="text-center">
-                <a class="btn btn-primary" href=""> Got to Project</a>
-              </div>
-            </div>
-          </div>
+      <!--Start Introduction  -->
+      <div id="home" class="col">
+        <div class="introduction">
+          <img src="./assets/illustration/4498903.jpg" alt="DevPic" />
 
-          <div class="card m-4" style="width: 18rem">
-            <img class="card-img-top" src="./assets/couch.jpg" alt="Pic" />
+          <caption>
+            <h1>
+              Hi, i'm Mikolaj. <br />I build things for web and i love it!
+            </h1>
+          </caption>
+        </div>
+      </div>
+
+      <!-- End Introduction -->
+      <!-- Start About -->
+      <div href="#about" id="about" class="col">
+        <div class="color-width"></div>
+        <div class="container">
+          <div class="color"></div>
+          <div class="card-col-md">
+            <h2 class="card-title">About me:</h2>
             <div class="card-body">
-              <h5 class="card-title">Project 1</h5>
-              <p class="card-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro
-                inventore laboriosam ipsum nam aliquid dolore nesciunt enim ea
-                fugiat, earum veniam minima architecto, reiciendis quis,
-                possimus dicta esse voluptatum. Officiis!
-              </p>
-              <div class="text-center">
-                <a class="btn btn-primary" href=""> Got to Project</a>
-              </div>
+              <h4 class="card-text">
+                Hi, i'm composer and software developer who through maiking
+                music for video games felt in love with programming. Currently
+                I'm in postgraduate studies at the WSB University in the field
+                of Front-End Developer with Angular.
+              </h4>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- End Project Site -->
-    <!-- Start Contact -->
-    <div id="contact">
-      <div class="container">
-        <div class="title-container">
-          <h2 class="title">Send me a message</h2>
+      <!-- End About -->
+      <!-- Start Technologies -->
+      <div id="technologies" href="#tech" class="col">
+        <h2 class="card-title">Technologies i'm familiar with:</h2>
+        <div class="container-md mt-3">
+          <div class="row">
+            <div class="color-tech"></div>
+            <div class="col">
+              <img class="picture" src="./assets/html5.svg" alt="html" />
+              <img class="picture" src="./assets/css3.svg" alt="css" />
+              <img class="picture" src="./assets/git.svg" alt="git" />
+            </div>
+            <div class="col">
+              <img
+                class="picture"
+                src="./assets/logo-javascript.svg"
+                alt="js"
+              />
+              <img class="picture" src="./assets/nodejs.svg" alt="node" />
+              <img
+                class="picture"
+                src="./assets/bootstrap-5.svg"
+                alt="bootstrap"
+              />
+            </div>
+            <div class="col">
+              <img class="picture" src="./assets/react-2.svg" alt="react" />
+              <img class="picture" src="./assets/jquery.svg" alt="jquery" />
+              <img
+                class="picture"
+                src="./assets/adobe-xd-1.svg"
+                alt="adobe-xd"
+              />
+            </div>
+            <div class="col">
+              <img class="picture" src="./assets/mongodb.svg" alt="mongodb" />
+              <img class="picture" src="./assets/sass-1.svg" alt="sass" />
+            </div>
+          </div>
+          <div class="row"></div>
         </div>
+      </div>
+      <!--  End Technologies -->
 
-        <form class="form">
-          <div class="card">
-            <div class="card-body">
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name-input"
-                  placeholder="name"
-                />
+      <!-- Start Project Site -->
+      <div id="projects" class="col">
+        <div class="container-md">
+          <h2 class="card-title">My projects:</h2>
+          <div class="row">
+            <div class="card m-4" style="width: 18rem">
+              <img class="card-img-top" src="./assets/couch.jpg" alt="Pic" />
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Porro inventore laboriosam ipsum nam aliquid dolore nesciunt
+                  enim ea fugiat, earum veniam minima architecto, reiciendis
+                  quis, possimus dicta esse voluptatum. Officiis!
+                </p>
+                <div class="text-center">
+                  <a class="btn btn-primary" href=""> Got to Project</a>
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email-input"
-                  placeholder="example@mail.com"
-                />
+            </div>
+
+            <div class="card m-4" style="width: 18rem">
+              <img class="card-img-top" src="./assets/couch.jpg" alt="Pic" />
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Porro inventore laboriosam ipsum nam aliquid dolore nesciunt
+                  enim ea fugiat, earum veniam minima architecto, reiciendis
+                  quis, possimus dicta esse voluptatum. Officiis!
+                </p>
+                <div class="text-center">
+                  <a class="btn btn-primary" href=""> Got to Project</a>
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="4"></textarea>
-              </div>
-              <div class="btn-container">
-                <button class="btn btn-primary">Send</button>
+            </div>
+
+            <div class="card m-4" style="width: 18rem">
+              <img class="card-img-top" src="./assets/couch.jpg" alt="Pic" />
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Porro inventore laboriosam ipsum nam aliquid dolore nesciunt
+                  enim ea fugiat, earum veniam minima architecto, reiciendis
+                  quis, possimus dicta esse voluptatum. Officiis!
+                </p>
+                <div class="text-center">
+                  <a class="btn btn-primary" href=""> Got to Project</a>
+                </div>
               </div>
             </div>
           </div>
-        </form>
+        </div>
       </div>
+      <!-- End Project Site -->
+      <!-- Start Contact -->
+      <div id="contact" class="col">
+        <div class="container">
+          <div class="title-container">
+            <h2 class="title">Send me a message</h2>
+          </div>
+
+          <form class="form">
+            <div class="card">
+              <div class="card-body">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name-input"
+                    placeholder="name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email-input"
+                    placeholder="example@mail.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                  ></textarea>
+                </div>
+                <div class="btn-container">
+                  <button class="btn btn-primary">Send</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- End Contact -->
     </div>
-    <!-- End Contact -->
   </body>
   <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
     crossorigin="anonymous"
   ></script>
   <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
     crossorigin="anonymous"
   ></script>
 </html>
