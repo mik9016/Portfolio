@@ -15,6 +15,7 @@
   "dependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.12.13",
+    "animejs": "^3.2.1",
     "autoprefixer": "^9.7.4",
     "axios": "^0.21.1",
     "babel-loader": "^8.0.5",
