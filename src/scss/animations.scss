@@ -1,13 +1,20 @@
 @keyframes tech-up {
   0% {
-    top: 0;
+    opacity: 0;
+    
   }
-  50% {
-    top: 8px;
 
-  }
   100% {
-    top: 0px;
+    opacity: 1;
    
   }
 }
+
+@keyframes spinn {
+ 
+  100% {
+   transform: rotate(360deg);
+   
+  }
+}
+

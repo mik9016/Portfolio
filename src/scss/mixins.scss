@@ -4,5 +4,14 @@
     justify-content: start;
     margin-bottom: 4rem;
 }
+@mixin show-animation ($name ,$duration) {
+    animation-name: $name;
+    animation-duration: $duration;
+}
 
+@mixin  spinning  {
+    animation-name: spinn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
   

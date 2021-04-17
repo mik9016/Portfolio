@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>M.Gruszecki | Frontend Developer</title>
+    <link rel="shortcut icon" type="image/jpg/png" href="./assets/logomg.png"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+  
   </head>
   <body>
     <div class="container">
       <!-- Start Navbar -->
-      <div id="navigation" class="col">
+      <section id="navigation" class="col">
         <nav
           class="navbar navbar-expand-lg navbar-light bg-white fixed-top mx-auto"
         >
@@ -54,11 +57,11 @@
             </div>
           </div>
         </nav>
-      </div>
+      </section>
       <!-- End Navbar -->
 
       <!--Start Introduction  -->
-      <div id="home" class="col">
+      <section id="home" class="col" >
         <div class="introduction">
           <img src="./assets/illustration/4498903.jpg" alt="DevPic" />
 
@@ -68,11 +71,11 @@
             </h1>
           </caption>
         </div>
-      </div>
+      </section>
 
       <!-- End Introduction -->
       <!-- Start About -->
-      <div href="#about" id="about" class="col">
+      <section href="#about" id="about" class="col" data-aos="fade-left">
         <div class="color-width"></div>
         <div class="container">
           <div class="color"></div>
@@ -88,10 +91,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- End About -->
       <!-- Start Technologies -->
-      <div id="technologies" href="#tech" class="col">
+      <section id="technologies" href="#tech" class="col" data-aos="fade-right">
         <h2 class="card-title">Technologies i'm familiar with:</h2>
         <div class="container-md mt-3">
           <div class="row">
@@ -130,31 +133,113 @@
           </div>
           <div class="row"></div>
         </div>
-      </div>
+      </section>
       <!--  End Technologies -->
 
       <!-- Start Project Site -->
-      <div id="projects" class="col">
+      <section id="projects" class="col" data-aos="fade-left">
         <div class="container-md">
           <h2 class="card-title">My projects:</h2>
           <div class="row">
-            <div class="card m-4 shadow" style="width: 18rem">
-              <img class="card-img-top" src="./assets/couch.jpg" alt="Pic" />
+            <!-- Project  1 - Buggy -->
+            <div class="card m-4 shadow"  style="width: 60vw">
+              <img class="card-img-top" src="./assets/BuggyHome.png" alt="Pic" />
               <div class="card-body">
-                <h5 class="card-title">Calories Counter</h5>
+                <h5 class="card-title">Buggy</h5>
                 <p class="card-text">
-                  Project made to practise using conections with API. 
-                  App allows to write down products you ate and giving you calories in return.
-                  Scary, i know. :D
+                  Buggy is an app to manage projects.
+                  It allows you to create projects, tickets and teams around the projects. Manage and see how the project is moving forward. 
+                  Was inspired by Jira 🔥🔥
+                  
                 </p>
-                <div class="text-center">
-                  <a class="btn btn-primary" href=""> Got to Project</a>
+                <div id="git">
+                  <div class="row">
+                    <div class="col d-flex justify-content-end">
+                      <a class="textUnderIcons"  href="https://github.com/mik9016/BugTracker" target="_blank"
+                      ><img src="./assets/github-icon-1.svg" alt="github"
+                    /> <p class="textUnderIcons">git</p></a>
+                   
+                    </div>
+                    <div class="col d-flex justify-content-start">
+                      <a class="textUnderIcons" href="https://github.com/mik9016/BugTracker" target="_blank"
+                      ><img src="./assets/bug.png" alt="github"
+                    /> <p >website</p></a>                   
+                    </div>
+                  </div>
+                
+                
+               
+                
                 </div>
+                
+                <div class="text-center">
+                  <button id="buggyBtn" class="btn btn-primary">Show more</button>
+                </div>
+                <!-- Toggled Details Section -->
+                <section id="projectDetails" >
+                  <h5 class="card-title mt-4">
+                     Features
+                  </h5>
+                  <hr>
+                  <div class="features-list">
+                    <div class="row">
+                      <div class="col text-center">
+                        <ul  class=" Features" >
+                          <li>Register</li>
+                          <li>Login</li>
+                          <li>Create Project</li>
+                          <li>Update Project</li>
+                          <li>Delete Project</li>
+                          <li>See created Projects</li>
+                          <li>See projects you are involved in</li>
+                          <li>Create Issues</li>
+                        </ul>
+                      </div>
+                      <div class="col text-center">
+                        <ul class="Features">
+                          <li>Update Issues</li>
+                          <li>Delete Issues</li>
+                          <li>Invite other users to the project</li>
+                          <li>Delete other users from the project</li>
+                          <li>Update roles of the users</li>
+                          <li>Upload the avatar Photo</li>
+                          <li>Sort Tickets by status</li>
+                          <li>Read Number of sorted Tickets</li>
+                          <li>Sort Tickets by letter</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="techno"></div>
+                    <h5 class="card-title mt-4">Technologies used in project</h5> 
+                  
+                      <div class="col text-center">
+                        <ul class="Features">
+                          <li>React JS</li>
+                          <li>Firebase</li>
+                          <li>Sass</li>
+                          
+                        </ul>
+                      </div>
+
+
+                    
+                  </div>
+                  <hr>
+              
+
+                </section>
               </div>
             </div>
-
-            <div class="card m-4 shadow" style="width: 18rem">
-              <img class="card-img-top" src="./assets/couch.jpg" alt="Pic" />
+            
+            
+            <!-- project 2  -->
+            <!-- <div class="card m-4 shadow" style="width: 18rem">
+              <img
+                class="card-img-top fluid"
+                src="./assets/Singin-Mom.png"
+                alt="Pic"
+              />
               <div class="card-body">
                 <h5 class="card-title">Singing Mom</h5>
                 <p class="card-text">
@@ -187,11 +272,12 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div> -->
+        <p class="text-center">More to come..</p>
+      </section>
       <!-- End Project Site -->
       <!-- Start Contact -->
-      <div id="contact" class="col">
+      <section id="contact" class="col" data-aos="fade-left">
         <div class="container">
           <div class="title-container">
             <h2 class="title">Send me a message</h2>
@@ -200,7 +286,7 @@
           <form class="form">
             <div class="card shadow">
               <div class="card-body">
-                <div class="mb-3 ">
+                <div class="mb-3">
                   <label for="name" class="form-label">Name</label>
                   <input
                     type="text"
@@ -209,6 +295,8 @@
                     placeholder="name"
                   />
                 </div>
+               
+
                 <div class="mb-3">
                   <label for="email" class="form-label">Email</label>
                   <input
@@ -234,10 +322,10 @@
             </div>
           </form>
         </div>
-      </div>
+      </section>
       <!-- End Contact -->
     </div>
-    <div class="col">
+    <section class="col" >
       <div id="footer">
         <footer>
           <div id="social-icons">
@@ -259,7 +347,7 @@
           </div>
         </footer>
       </div>
-    </div>
+    </section>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
@@ -271,5 +359,8 @@
     integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
     crossorigin="anonymous"
   ></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

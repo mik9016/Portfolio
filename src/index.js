@@ -1,7 +1,10 @@
 import style from "./scss/index.scss";
 import anime from "animejs/lib/anime.es.js";
+import Joi from "@hapi/joi";
+// import $ from "jquery";
 
-//Form Handling
+import {ProjectDetails} from './ProjectDetails';
+//Contact Form Handling
 
 class Form {
   constructor() {
@@ -50,5 +53,7 @@ class Form {
     this.clearForm();
   }
 }
-//
+
 new Form();
+new ProjectDetails();
+//////////////////
