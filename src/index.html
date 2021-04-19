@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>M.Gruszecki | Frontend Developer</title>
-    <link rel="shortcut icon" type="image/jpg/png" href="./assets/logomg.png"/>
+    <link rel="shortcut icon" type="image/jpg/png" href="./assets/favicon.png"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
@@ -50,7 +50,7 @@
                   <a class="nav-link" href="#projects">Projects</a>
                 </li>
 
-                <li>
+                <li class="nav-item">
                   <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
@@ -137,12 +137,12 @@
       <!--  End Technologies -->
 
       <!-- Start Project Site -->
-      <section id="projects" class="col" data-aos="fade-left">
-        <div class="container-md">
+      <section id="projects" class="col" data-aos="fade-left" href="#projects">
+        <div class="container-fluid-md" >
           <h2 class="card-title">My projects:</h2>
-          <div class="row">
+          <div class="row" >
             <!-- Project  1 - Buggy -->
-            <div class="card m-4 shadow"  style="width: 60vw">
+            <div class="card shadow m-4 w-100"  >
               <img class="card-img-top" src="./assets/BuggyHome.png" alt="Pic" />
               <div class="card-body">
                 <h5 class="card-title">Buggy</h5>
@@ -154,7 +154,7 @@
                 </p>
                 <div id="git">
                   <div class="row">
-                    <div class="col d-flex justify-content-end">
+                    <div class="col d-flex justify-content-end w-100">
                       <a class="textUnderIcons"  href="https://github.com/mik9016/BugTracker" target="_blank"
                       ><img src="./assets/github-icon-1.svg" alt="github"
                     /> <p class="textUnderIcons">git</p></a>
@@ -184,7 +184,7 @@
                   <div class="features-list">
                     <div class="row">
                       <div class="col text-center">
-                        <ul  class=" Features" >
+                        <ul  class=" Features " >
                           <li>Register</li>
                           <li>Login</li>
                           <li>Create Project</li>
@@ -277,23 +277,24 @@
       </section>
       <!-- End Project Site -->
       <!-- Start Contact -->
-      <section id="contact" class="col" data-aos="fade-left">
-        <div class="container">
-          <div class="title-container">
+      <section id="contact" class="col w-100" data-aos="fade-left" >
+        <div class="container" id="contactContainer">
+          <div class="title-container  text-center">
             <h2 class="title">Send me a message</h2>
           </div>
 
-          <form class="form">
-            <div class="card shadow">
-              <div class="card-body">
+          <form class="form w-100" >
+            <div  class="card shadow w-100" >
+              <div class="card-body" id="contactCard">
                 <div class="mb-3">
-                  <label for="name" class="form-label">Name</label>
+                  <label for="name" class="form-label" >Name</label>
                   <input
                     type="text"
                     class="form-control"
                     id="name-input"
                     placeholder="name"
                   />
+                  <div id="contactName" ></div>
                 </div>
                
 
@@ -305,7 +306,9 @@
                     id="email-input"
                     placeholder="example@mail.com"
                   />
+                  <div id="contactMail" ></div>
                 </div>
+
                 <div class="mb-3">
                   <label for="message" class="form-label">Message</label>
                   <textarea
@@ -314,8 +317,9 @@
                     rows="4"
                     placeholder="message"
                   ></textarea>
+                  <div id="contactMessage" ></div>
                 </div>
-                <div class="btn-container">
+                <div class="btn-container text-center">
                   <button id="send-btn" class="btn btn-primary">Send</button>
                 </div>
               </div>
@@ -326,9 +330,12 @@
       <!-- End Contact -->
     </div>
     <section class="col" >
+     
       <div id="footer">
         <footer>
+          
           <div id="social-icons">
+            
             <a
               href="https://www.linkedin.com/in/miko%C5%82aj-gruszecki-2b54561b8/"
               target="_blank"
@@ -341,10 +348,13 @@
               <img src="./assets/gmail-icon.svg" alt="gmail"
             /></a>
           </div>
-          <div>
+          
             <p>&copy; Copyright Mikolaj Gruszecki</p>
-            <img src="./assets//logomg.png" alt="Logo" id="mylogo" />
-          </div>
+            <a href="https://portfolioadminsite.web.app/" target="_blank"> 
+            <img src="./assets//logomg.png" alt="Logo" id="mylogo"/>
+          </a>
+            
+          
         </footer>
       </div>
     </section>

@@ -3,12 +3,12 @@
 @import "./mixins.scss";
 @import "./animations.scss";
 
-$hoverColor: #385a64;
+
 
 .btn-primary {
   background-color: $main-color;
   border: none;
-  &:hover {
+  &:hover,&:focus {
     background-color: $hoverColor;
   }
 }
@@ -75,6 +75,7 @@ $hoverColor: #385a64;
   }
   .container {
     margin-top: 2rem;
+    
     width: 50vw;
     display: flex;
     justify-content: center;
@@ -123,12 +124,14 @@ $hoverColor: #385a64;
   }
 }
 #projects {
+  
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   
   .card {
+    width: 60vw;
     &:hover {
       cursor: pointer;
       
@@ -174,7 +177,7 @@ $hoverColor: #385a64;
 
 #contact {
  
-  margin: 4rem;
+
   .container {
     display: flex;
     flex-direction: column;
@@ -221,11 +224,17 @@ $hoverColor: #385a64;
     p {
       margin-top: 2rem;
     }
+    a{
+      cursor: pointer;
+    }
     #mylogo {
       margin: 0;
+    
     }
   }
 }
 .autoprefixer {
   user-select: none;
 }
+
+

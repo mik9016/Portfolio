@@ -17,6 +17,7 @@ Site was build using OOP.
 - Webpack
 - AOS animations
 - Axios
+- Bootstrap
 
 
 
